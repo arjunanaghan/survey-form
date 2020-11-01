@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 id="title">Restaurant Evaluation Form</h1>
+                <p id="description">Please do let us know how was the food and service.</p>
+            </header>
+            <section class="container">
+                <form id="survey-form">
+                    <div class="form-e">
+                        <label id="name-label">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name here" required>
+                    </div>
+                    <div class="form-e">
+                        <label id="email-label">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email here" required>
+                    </div>
+                    <div class="form-e">
+                        <label id="number-label">Age</label>
+                        <input type="number" min="18" max="99" id="number" placeholder="Enter your age here" required>
+                    </div>
+                    <div class="form-e">
+                        <label for="gender">What is your gender?</label>
+                        <select name="gender" id="dropdown">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="form-e">
+                        <label for="date">Date visited</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="form-e">
+                        <label>Dine In / Take Out</label>
+                        <label for="in"><input type="checkbox" id="in" name="in-out" value="in">Dine In</label>
+                        <label for="out"><input type="checkbox" id="out" name="in-out" value="out">Take out</label>
+                    </div>
+                    <div class="form-e">
+                        <label>Food quality</label>
+                        <label for="excellent"><input type="radio" id="excellent" value="excellent" name="f-quality">Excellent</label>
+                        <label for="good"><input type="radio" id="good" value="good" name="f-quality">Good</label>
+                        <label for="average"><input type="radio" id="average" value="average" name="f-quality">Average</label>
+                        <label for="dissatisfied"><input type="radio" id="dissatisfied" value="dissatisfied" name="f-quality">Dissatisfied</label>
+                    </div>
+                    <div class="form-e">
+                        <label>Service quality</label>
+                        <label for="excel"><input type="radio" id="excel" value="excellent" name="s-quality">Excellent</label>
+                        <label for="gd"><input type="radio" id="gd" value="good" name="s-quality">Good</label>
+                        <label for="avg"><input type="radio" id="avg" value="average" name="s-quality">Average</label>
+                        <label for="dis"><input type="radio" id="dis" value="dissatisfied" name="s-quality">Dissatisfied</label>
+                    </div>
+                    <div class="form-e">
+                        <label>Overall Experience</label>
+                        <label for="o-excel"><input type="radio" id="o-excel" value="excellent" name="o-exp">Excellent</label>
+                        <label for="o-gd"><input type="radio" id="o-gd" value="good" name="o-exp">Good</label>
+                        <label for="o-avg"><input type="radio" id="o-avg" value="average" name="o-exp">Average</label>
+                        <label for="o-dis"><input type="radio" id="o-dis" value="dissatisfied" name="o-exp">Dissatisfied</label>
+                    </div>
+                    <div class="form-e">
+                        <label>Any comments, questions or suggestions?</label>
+                        <textarea id="textarea" name="textarea" placeholder="Enter your comments here..."></textarea>
+                    </div>
+                    <div class="form-e">
+                        <button id="submit">Submit</button>
+                    </div> 
+                </form>
+            </section>
+        </main>
+        <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+    </body>
+</html>

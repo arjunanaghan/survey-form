@@ -1,0 +1,102 @@
+body {
+  /*background: url(https://cdn.pixabay.com/photo/2016/07/30/20/52/vintage-1557993_960_720.jpg);*/
+  background: url(wood.webp);
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+#title {
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+#description {
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+}
+
+.form-e {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, select, textarea {
+  font-size: 18px;
+}
+
+#name, #email, #number, #dropdown, #date {
+  height: 40px;
+  border-radius: 5px;
+}
+
+#textarea {
+  height: 100px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#submit {
+  align-self: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: hidden;
+  font-size: 18px;
+}
+#submit:hover {
+  color: white;
+  background-color: #3b1c09;
+  border: white solid 1px;
+  transform: scale(1.01);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 70vw;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
