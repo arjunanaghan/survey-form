@@ -37,12 +37,15 @@ header{
 #survey-form{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
     margin: 20px;
 }
 .form-e{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
